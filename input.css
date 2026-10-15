@@ -67,6 +67,12 @@
  --accent-dim:    rgba(251,191,36,0.10);
  --accent-border: rgba(251,191,36,0.22);
  --navbar-bg:     rgba(15, 15, 15, 0.82);
+ --color-full: linear-gradient(45deg, #6669f3 ,#000 , #000)
+ /* bg-gradient-to-r from-black-400 to-cyan-400 to-slate-800 */
+}
+
+@utility bg-color-full {
+    background: var(--color-full);
 }
 
 @media (prefers-color-scheme: light) {
@@ -85,6 +91,7 @@
    --accent-dim:    rgba(180, 83, 9, 0.08);
    --accent-border: rgba(180, 83, 9, 0.22);
    --navbar-bg:     rgba(247, 246, 243, 0.88);
+   --color-full: linear-gradient(45deg, #6669f3 ,#000 , #000 , #676)
  }
 }
 ::-webkit-scrollbar       { width: 5px; height: 5px; }
