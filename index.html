@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="output.css">
 </head>
 
-<body>
+<body class="m-0 w-full overflow-x-clip">
     <header class="fixed top-0 left-0 w-full z-10
     bg-color-full backdrop-blur-3xl
     border-b border-white/20
@@ -33,7 +33,7 @@
         </ul>
     </header>
     <!-------------------------------->
-    <main class="relative min-h-screen bg-(--surface-solid) text-white p-4">
+    <main class="relative bg-(--surface-solid) text-white p-4 flex flex-col w-full max-w-full">
 
         <section id="home" class="md:flex">
             <!-- Background Image -->
@@ -67,7 +67,7 @@
             </div>
 
         </section>
-
+        <!-- modifucation section -->
         <!-- --------------------------------------------------------------- -->
         <section id="modify" class="md:p-7">
 
@@ -179,24 +179,26 @@
 
             </div>
         </section>
-        <section id="specify" class="md:p-7">
+        <!-- specfy section -->
+        <section id="specify" class="md:p-7 mt-12">
 
-            <div class="flex mt-9">
+            <div class="flex mt-9 flex-wrap">
 
-                <article class="bg-red-500inline-block rounded-full">
+                <article class="h-70 w-52 md:ml-10 md:h-160 md:w-160 max-w-md mx-auto ">
                     <figure
-                        class="object-cover h-60 w-60 md:h-190 md:w-170 p-4 mt-12 bg-green-500 rounded-full border-4">
+                        class="object-cover md:h-160 md:w-160 bg-green-500 rounded-full border-4 flex items-center justify-center">
                         <img src="wheeeel.png" alt="" class="animate-wiggle2">
                     </figure>
-                </article>
-                <div class="mr-60">
-                    <h1 class="text-2xl text-(--text-1) md:text-3xl font-bold font-mono">ENGINEERED TO SPIN. BUILT TO
+                 </article>
+                <div class="h-140 w-170">
+                    <h1 class="text-2xl text-(--text-1) md:text-3xl font-bold font-mono tracking-widest">ENGINEERED TO SPIN. BUILT TO
                         STAND OUT...</h1>
                     <p class="mt-6 text-(--text-3) font-bold">Premium, bold aur perfect for a rotating wheel animation.
                     </p>
                     <p class="mt-5">Crafted for the fearless. Every spoke, every curve, every rotation reflects
                         precision, power, and uncompromising performance.</p>
-                    <table class="text-(--text-2) border-l-2 border-r-2 border-red-500 mt-5 border-separate border-spacing-1 md:p-2.5 text-center w-full md:ml-30 md:mt-20">
+                        
+                    <table class="text-(--text-2) border-l-2 border-r-2 border-red-500 mt-5 border-separate border-spacing-1 md:p-2.5 text-center w-full md:ml-20 md:mt-20">
                         <tr>
                             <td>01 — FORGED PRECISION</td>
                             <td>02 — GOLDEN FINISH</td>
@@ -208,13 +210,13 @@
                             <td>360° — PURE PERFECTION</td>
                             <td>DESIGNED FOR MOTION</td>
                         </tr>
-
-
                     </table>
+
                 </div>
             </div>
-        <section id="about" class="border-t border-(--border) py-20 mt-12">
-            <div class="max-w-6xl mx-auto px-6 mt-9">
+            <!-- end page -->
+        <section id="about" class="border-t border-(--border) py-4 ">
+            <div class="max-w-6xl mx-auto px-6">
                 <h2 class="uppercase text-(--text-3) text-xs tracking-widest mb-4">Get In Touch</h2>
 
                 <div class="flex flex-col gap-10 md:flex-row justify-between">
