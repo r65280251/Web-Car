@@ -8,7 +8,6 @@
  --animate-change: rotate ease-in 4s infinite;
  --animate-wiggle2: wiggle2 linear 2s infinite;
  --animate-wiggle3: wiggle3 linear 2s infinite;
- --animate-wiggle4: wiggle4 linear 7s infinite;
 
 
 }
@@ -43,16 +42,6 @@
   to{
     rotate: 360deg;
   }
-
-}
-@keyframes wiggle4 {
-  from{
-    rotate: 0deg;
-  }
-  to{
-    rotate: 360deg;
-  }
-
 
 }
 @keyframes wiggle2 {
