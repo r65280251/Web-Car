@@ -6,7 +6,8 @@
  --font-mono: 'JetBrains Mono', ui-monospace, 'Courier New', monospace;
  --animate-wiggle: wiggle ease-in 10s infinite;
  --animate-change: rotate ease-in 4s infinite;
- --animate-wiggle2: wiggle2 linear 12s infinite;
+ --animate-wiggle2: wiggle2 linear 2s infinite;
+ --animate-wiggle3: wiggle3 linear 2s infinite;
 
 
 }
@@ -44,14 +45,39 @@
 
 }
 @keyframes wiggle2 {
-  from{
-    rotate: 0deg;
+  0%{
+   transform: translateY(50px);
+    background-color: greenyellow;
   }
-  to{
-    rotate: 360deg;
+  50%{
+    transform: translateX(20px);
+    transform: translateX(-40px);
+    background-color: grey;
   }
+  100%{
+    transform: translateY(-50px);
+    background-color: greenyellow;
 
+  }
 }
+@keyframes wiggle3 {
+  0%{
+   transform: translateY(60px);
+    background-color: pink;
+  }
+  50%{
+    transform: translateX(30px);
+    transform: translateX(-40px);
+    background: linear-gradient(45deg , rgb(26, 128, 211),rgb(15, 210, 194)), rgb(217, 232, 13);
+        background-color: purple;
+  }
+  100%{
+    transform: translateY(-10px);
+        background-color: pink;
+
+  }
+}
+
 :root { 
 --surface:        #0f0f0f;
  --surface-card:   rgba(22, 22, 22, 0.75);
