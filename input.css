@@ -4,10 +4,11 @@
  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
  --font-serif: 'Playfair Display', ui-serif, Georgia, serif;
  --font-mono: 'JetBrains Mono', ui-monospace, 'Courier New', monospace;
- --animate-wiggle: wiggle ease-in 10s infinite;
+ --animate-wiggle: wiggle linear 10s infinite;
  --animate-change: rotate ease-in 4s infinite;
  --animate-wiggle2: wiggle2 linear 2s infinite;
  --animate-wiggle3: wiggle3 linear 2s infinite;
+ --animate-wiggle4: wiggle4 linear 7s infinite;
 
 
 }
@@ -42,6 +43,16 @@
   to{
     rotate: 360deg;
   }
+
+}
+@keyframes wiggle4 {
+  from{
+    rotate: 0deg;
+  }
+  to{
+    rotate: 360deg;
+  }
+
 
 }
 @keyframes wiggle2 {
